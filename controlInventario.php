@@ -8,10 +8,12 @@
     </head>
     <body>
         
-        <div class="menu">Menu</div>
+        <div class="menu">
+            <a href="carritoCompras.php"><div class="links">Regresar al catalogo de productos</div></a>
+            </div>
        
-        <div class="lateral">LATERAL </div>
-        <div class="cuerpo">CUERPO
+        <div class="lateral"></div>
+        <div class="cuerpo">INVENTARIO<br><br>
         <?php
             $consulta="SELECT *FROM inventario";
             $result=  mysqli_query($connection, $consulta);
@@ -45,10 +47,10 @@
                     echo "precio proveedor<input type='text' REQUIRED name='precioProveedor' id='precioProveedor' value='".$b['precioProveedor']."'/>";
                     echo "precio venta <input type='text' REQUIRED name='precioVenta' id='precioVenta' value='".$b['precioVenta']."'/>";
                     echo "cantidad<input type='text' REQUIRED name='cantidad' id='cantidad' value='".$b['cantidad']."'/><br>";
-                    echo "imagen<input type='file' name='imagen' id='imagen' />";
-                    echo "<input type='submit'  name='Enviar' id='Enviar' value='hacer registro'/>";
-                    echo "<input type='submit'  name='actualizar' id='actualizar'value='actualizar registro'/>";
-                    echo "<input type='submit'  name='eliminar' id='eliminar' value='actualizar registro'/>";
+                    echo "imagen<input type='file' name='imagen' id='imagen' /><br>";
+                    echo "<input type='submit'  name='Enviar' id='Enviar' value='Hacer registro'/>";
+                    echo "<input type='submit'  name='actualizar' id='actualizar'value='Actualizar registro'/>";
+                    echo "<input type='submit'  name='eliminar' id='eliminar' value='Eliminar registro'/>";
                 echo "</form>";
                 }
             }else{
@@ -61,9 +63,9 @@
                     precio venta <input type="text" REQUIRED name="precioVenta" id="precioVenta"  >
                     cantidad<input type="text" REQUIRED name="cantidad" id="cantidad"  ><br>
                     imagen<input type="file" name="imagen" id="imagen"><br>
-                    <input type="submit"  name="Enviar" id="enviar" value='hacer registro'>
-                    <input type='submit'  name='actualizar' id='actualizar'value='actualizar registro'/>
-                    <input type='submit'  name='eliminar' id='eliminar' value='actualizar registro'/>
+                    <input type="submit"  name="Enviar" id="enviar" value='Hacer registro'>
+                    <input type='submit'  name='actualizar' id='actualizar'value='Actualizar registro'/>
+                    <input type='submit'  name='eliminar' id='eliminar' value='Eliminar registro'/>
                 </form>
                     
             <?php } ?>

@@ -9,7 +9,11 @@
 
     <body>
         
-        <div class="menu">Menu</div>
+        <div class="menu">
+            <a href="RedesSociales.html"><div  class="links">Redes sociales</div></a>
+            <a href="controlInventario.php"><div class="links">Control de inventario</div></a>
+            <a href="ControlDatos.html"><div class="links">Inicio de sesión</div></a>
+        </div>
         <!--Menu para las categorias, dependiendo de la seleccione es la que va a funcionar-->
         <div class="lateral"> 
             
